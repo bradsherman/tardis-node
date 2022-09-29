@@ -5,6 +5,7 @@ export const EXCHANGES = [
   'binance-delivery',
   'binance-options',
   'binance',
+  'bitnomial',
   'ftx',
   'okex-futures',
   'okex-options',
@@ -78,6 +79,8 @@ const BITMEX_CHANNELS = [
 ] as const
 
 const BITSTAMP_CHANNELS = ['live_trades', 'live_orders', 'diff_order_book'] as const
+
+const BITNOMIAL_CHANNELS = ['trade', 'book', 'status', 'block'] as const
 
 const COINBASE_CHANNELS = [
   'match',
@@ -385,6 +388,7 @@ const KUCOIN_CHANNELS = ['market/ticker', 'market/snapshot', 'market/level2', 'm
 
 export const EXCHANGE_CHANNELS_INFO = {
   bitmex: BITMEX_CHANNELS,
+  bitnomial: BITNOMIAL_CHANNELS,
   coinbase: COINBASE_CHANNELS,
   deribit: DERIBIT_CHANNELS,
   cryptofacilities: CRYPTOFACILITIES_CHANNELS,

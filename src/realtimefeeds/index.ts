@@ -45,6 +45,7 @@ import { BybitSpotRealTimeFeed } from './bybitspot'
 import { CryptoComRealTimeFeed } from './cryptocom'
 import { CryptoComDerivativesRealTimeFeed } from './cryptocomderivatives'
 import { KucoinRealTimeFeed } from './kucoin'
+import { BitnomialRealTimeFeed } from './bitnomial'
 
 export * from './realtimefeed'
 
@@ -61,6 +62,7 @@ const realTimeFeedsMap: {
   bitfinex: BitfinexRealTimeFeed,
   'bitfinex-derivatives': BitfinexRealTimeFeed,
   bitflyer: BitflyerRealTimeFeed,
+  bitnomial: BitnomialRealTimeFeed,
   bitstamp: BitstampRealTimeFeed,
   coinbase: CoinbaseRealTimeFeed,
   cryptofacilities: CryptofacilitiesRealTimeFeed,

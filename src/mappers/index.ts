@@ -26,6 +26,7 @@ import {
   bitmexBookTickerMapper,
   bitmexTradesMapper
 } from './bitmex'
+import { bitnomialBookChangeMapper, bitnomialTradesMapper } from './bitnomial'
 import { BitstampBookChangeMapper, bitstampTradesMapper } from './bitstamp'
 import { BybitBookChangeMapper, BybitDerivativeTickerMapper, BybitLiquidationsMapper, BybitTradesMapper } from './bybit'
 import { BybitSpotBookChangeMapper, BybitSpotBookTickerMapper, BybitSpotTradesMapper } from './bybitspot'
@@ -136,6 +137,7 @@ const tradesMappers = {
   bitfinex: () => new BitfinexTradesMapper('bitfinex'),
   'bitfinex-derivatives': () => new BitfinexTradesMapper('bitfinex-derivatives'),
   bitflyer: () => bitflyerTradesMapper,
+  bitnomial: () => bitnomialTradesMapper,
   bitstamp: () => bitstampTradesMapper,
   coinbase: () => coinbaseTradesMapper,
   cryptofacilities: () => cryptofacilitiesTradesMapper,
@@ -198,6 +200,7 @@ const bookChangeMappers = {
   bitfinex: () => new BitfinexBookChangeMapper('bitfinex'),
   'bitfinex-derivatives': () => new BitfinexBookChangeMapper('bitfinex-derivatives'),
   bitflyer: () => new BitflyerBookChangeMapper(),
+  bitnomial: () => bitnomialBookChangeMapper,
   bitstamp: () => new BitstampBookChangeMapper(),
   coinbase: () => new CoinbaseBookChangMapper(),
   cryptofacilities: () => cryptofacilitiesBookChangeMapper,
